@@ -47,3 +47,30 @@ VALUES
 
 
 select * from employee;
+
+
+CREATE TABLE departments
+(
+ dept_id INT NOT NULL PRIMARY KEY,
+ dept_name VARCHAR(200) UNIQUE KEY
+);
+
+INSERT INTO departments (dept_id, dept_name)
+VALUES
+(1, 'Human Resources'),
+(2, 'Finance'),
+(3, 'Marketing'),
+(4, 'Sales'),
+(5, 'Engineering'),
+(6, 'Product Management'),
+(7, 'Customer Support'),
+(8, 'Legal'),
+(9, 'Operations'),
+(10, 'IT'),
+(11, 'Research and Development'),
+(12, 'Business Development'),
+(13, 'Quality Assurance'),
+(14, 'Supply Chain'),
+(15, 'Public Relations');
+
+select * from Departments order by dept_id;
